@@ -2,7 +2,7 @@ name: TimerV3
 on:
   push:
     branches:
-      - main
+      - feature/test
   workflow_dispatch:
 
 permissions:
