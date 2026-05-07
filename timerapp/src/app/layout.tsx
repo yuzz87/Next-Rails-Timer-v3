@@ -1,6 +1,7 @@
 import "./globals.css"
 import type { Metadata } from "next"
 import Image from "next/image"
+import SwRegister from "./sw-register"
 
 export const metadata: Metadata = {
   title: "dev",
@@ -15,7 +16,9 @@ export default function Layout({
   return (
     <html lang="ja">
       <body>
+        <SwRegister/>
         {children}
+        
 
         <footer className="fixed bottom-0 left-0 z-50 w-full bg-white">
           <div className="border-t border-gray-300 p-4">
