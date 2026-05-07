@@ -1,10 +1,13 @@
 import type { MetadataRoute } from "next"
 
-const basePath = process.env.NODE_ENV === "production" ? "/NEXTRails" : ""
+export const dynamic = "force-static"
+
+const basePath =
+  process.env.NODE_ENV === "production" ? "/Next-Rails-Timer-v3" : ""
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "NEXTRails Timer",
+    name: "Next-Rails-Timer-v3 Timer",
     short_name: "Timer",
     description: "Timer app built with Next.js",
     start_url: `${basePath}/`,
